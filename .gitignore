@@ -2,7 +2,6 @@
 
 __pycache__/
 
-
 # virtualenv
 myvenv/
 
@@ -11,3 +10,10 @@ cooking/__pycache__/
 
 #formulate
 formulate/__pycache__/
+
+# dotenv
+.env
+
+# virtualenv
+venv/
+ENV/
