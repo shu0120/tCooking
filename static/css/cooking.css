@@ -1,15 +1,16 @@
-h1 a {
-    color: #FCA205;
-    font-family: 'Lobster';
-}
 body {
-  margin: auto;
-
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace;
+    color: #333;
+    background: #fff;
 }
+
 .page-header {
-    background-color: #ff9400;
+    background-color: #777777;
     margin-top: 0;
-    padding: 20px 20px 20px 40px;
+    padding: 10px 10px 10px 40px;
 }
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
@@ -46,23 +47,27 @@ h1, h2, h3, h4 {
     margin-right: 20px;
 }
 
-.post {
-    margin-bottom: 5px;
-    border: 2px #000 solid;
-    margin:0 auto;
+.formulate {
+    margin-bottom: 1px;
+    border: 1px #fffee8 solid;
+    width: 80%;
+    height: 105px;
 }
 
-.post h1 a, .post h1 a:visited {
+.formulate h1 a, .formulate h1 a:visited {
     color: #000000;
 }
 
-.post .leftimg{
-  position:absolute;
-  width: 20%;
+.leftpost {
+    float:left;
 }
 
-.post .righttitle {
-    width:80%;
-    height:100px;
-    margin-left:100px;
+.leftpost img{
+    width: 100px;
+    max-height: 100px;
+    margin-right: 2px;
+}
+
+.rightpost, .rightpost a {
+    vertical-align: top;
 }

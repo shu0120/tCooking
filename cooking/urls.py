@@ -15,8 +15,10 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'',include('formulate.urls'))
-]
+    url(r'', include('formulate.urls')),
+] + static(settings.UPLOAD_URL, document_root=settings.UPLOAD_ROOT) #開放可直些存取, 有安全漏洞

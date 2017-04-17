@@ -2,14 +2,14 @@
 
 {% block content %}
   {% for formulate in formulates %}
-      <div class="post">
-          <p>{{ formulate.catagory }} published: {{ formulate.published_date }} / Created : {{ formulate.created_date }}</P>
-          <div class="leftimg">
-              <img scr=" {{ formulate.image }}" alt="縮圖"></img>
-          </div>
-          <div class="righttitle">
+      <div class="formulate" >
+          <span class="leftpost">
+            <img src="{{ formulate.image.url }}" alt="{{ formulate.image.url }}"></img>
+          </span>
+          <span class="rightpost">
               <h2><a href="{% url 'formulate_detail' pk=formulate.pk %}">{{ formulate.title }}</a></h2>
-          </div>
+              {{ formulate.catagory }} 公告日期: {{ formulate.published_date }} / 建立日期 : {{ formulate.created_date }}
+          </span>
       </div>
   {% endfor %}
 {% endblock %}
